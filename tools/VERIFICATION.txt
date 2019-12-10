@@ -1,0 +1,6 @@
+﻿VERIFICATION
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+ 
+Fetch manually from Github - https://github.com/jippi/hashi-ui/releases and manually run sha256sum.
+If you also think checksums should be there by default - poke Github...

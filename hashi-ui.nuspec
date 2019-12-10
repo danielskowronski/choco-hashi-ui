@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>hashi-ui</id>
+    <version>0.0.1-beta6</version>
+    <packageSourceUrl>https://github.com/danielskowronski/choco-hashi-ui</packageSourceUrl>
+    <owners>Daniel Skowroński</owners>
+    <title>hashi-ui</title>
+    <authors>Christian Winther</authors>
+    <projectUrl>https://github.com/jippi/hashi-ui</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/jippi/hashi-ui/master/frontend/assets/img/favicon.png</iconUrl>
+    <tags>hashi-ui consul nomad</tags>
+    <summary>A modern user interface for @hashicorp Consul &amp; Nomad</summary>
+    <description>
+# hashi-ui
+"An awesome user interface (even for mobile devices!) for HashiCorp Consul &amp; Nomad, plain and simple :-)""
+
+## --packageparameters
+
+### listen-address
+### consul-enabled
+### consul-address
+### nomad-enabled
+### nomad-address
+### other-params
+eg. `other-params="-site-title something -new-relic-enable true"`
+```
+----------------------------------------------------------------------------------
+|                                 HASHI UI                                       |
+----------------------------------------------------------------------------------
+| listen-address            : http://0.0.0.0:3000                                |
+| server-certificate        :                                                    |
+| server-key                :                                                    |
+| site-title                :                                                    |
+| proxy-address             :                                                    |
+| log-level                 : info                                               |
+| new-relic-enable          : false                                              |
+| new-relic-app-name        : hashi-ui                                           |
+| throttle-update-duration  : 0s                                                 |
+| nomad-enable              : false                                              |
+| nomad-read-only           : No (Hashi-UI can change Nomad state)               |
+| nomad-address             : http://127.0.0.1:4646                              |
+| nomad-acl-token           :                                                    |
+| nomad-ca-cert             :                                                    |
+| nomad-client-cert         :                                                    |
+| nomad-client-key          :                                                    |
+| nomad-skip-verify         : false                                              |
+| nomad-hide-env-data       : false                                              |
+| nomad-skip-verify         : No                                                 |
+| nomad-allow-stale         : Yes                                                |
+| nomad-color               : #4b9a7d                                            |
+| consul-enable             : false                                              |
+| consul-read-only          : No (Hashi-UI can change Consul state)              |
+| consul-address            : 127.0.0.1:8500                                     |
+| consul-acl-token          :                                                    |
+| consul-color              : #694a9c                                            |
+----------------------------------------------------------------------------------
+```
+    </description>
+    <dependencies>
+      <dependency id="nssm" version="2.24.101.20180116" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
