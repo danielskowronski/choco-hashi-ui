@@ -19,13 +19,13 @@ if (!$pp['listen-address']) {
 }
 
 if ($pp['consul-enabled'])  {
-  $servicesToEnable="$servicesToEnable --consul-enable"
+  $servicesToEnable="$servicesToEnable -consul-enable"
 }
 if ($pp['nomad-enabled'] )  {
-  $servicesToEnable="$servicesToEnable --nomad-enable"
+  $servicesToEnable="$servicesToEnable -nomad-enable"
 }
 if (!$pp['consul-enabled'] -and !$pp['nomad-enabled']) {
-  $servicesToEnable="--consul-enable --nomad-enable"
+  $servicesToEnable="-consul-enable"
 }
 
 if (!$pp['consul-address']) {

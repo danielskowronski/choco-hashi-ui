@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>hashi-ui</id>
-    <version>0.0.1-beta6</version>
+    <version>0.0.1-beta7</version>
     <packageSourceUrl>https://github.com/danielskowronski/choco-hashi-ui</packageSourceUrl>
     <owners>Daniel Skowroński</owners>
     <title>hashi-ui</title>
@@ -18,13 +18,13 @@
 
 ## --packageparameters
 
-### listen-address
-### consul-enabled
-### consul-address
-### nomad-enabled
-### nomad-address
-### other-params
-eg. `other-params="-site-title something -new-relic-enable true"`
+### /listen-address
+### /consul-enabled
+### /consul-address
+### /nomad-enabled
+### /nomad-address
+### /other-params
+eg. `/other-params:"-site-title something -new-relic-enable true"`
 ```
 ----------------------------------------------------------------------------------
 |                                 HASHI UI                                       |
