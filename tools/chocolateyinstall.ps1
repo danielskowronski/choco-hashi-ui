@@ -25,7 +25,8 @@ if ($pp['nomad-enabled'] )  {
   $servicesToEnable="$servicesToEnable -nomad-enable"
 }
 if (!$pp['consul-enabled'] -and !$pp['nomad-enabled']) {
-  $servicesToEnable="-consul-enable"
+  $servicesToEnable="-help"
+  Write-Output "hashi-ui requires nomad or consul"
 }
 
 if (!$pp['consul-address']) {
